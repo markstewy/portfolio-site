@@ -1,0 +1,287 @@
+html, body {
+   width: 100%;
+   margin: 0px;
+   padding: 0px;
+}
+.header1 {
+   position: absolute;
+   width: 100%;
+   text-align: right;
+   z-index: 10;
+}
+.navbar {
+   padding-top: 40px;
+   /*height: 50px;*/
+}
+#navbutton {
+   margin-right: 32px;
+   margin-top: 30px;
+   text-decoration: none;
+   font-family: 'Candal', sans-serif;
+   color: white;
+   text-shadow: 0 1px 0 black;
+}
+.logoname {
+   margin-top: -15px;
+   margin-left: 40px;
+   float: left;
+   font-family: 'Pacifico';
+   font-size: 1.7em;
+   color: white;
+   text-decoration: none;
+   text-shadow: 0 1px 0 black;
+}
+/*==========================HOME TEMPLATE CSS=============================*/
+#hometitle {
+   padding-top: 150px;
+   margin-top: -32px;
+   text-align: center;
+   font-family: 'Candal', sans-serif;
+   color: white;
+   font-size: 6em;
+   text-shadow: 0 1px 0 black;
+   line-height: 85px;
+   /*min-width: 880px;*/
+}
+.Sec1home {
+   /*color: white;*/
+   background-image: url("https://images.unsplash.com/photo-1428341751458-3c844056bc0f?crop=entropy&fit=crop&fm=jpg&h=725&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1775");
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: right;
+   height: 32em;
+}
+@media (max-width: 880px) {
+  #long {
+    display: none;
+  }
+  /*#hometitle {
+     padding-top: 119px;
+  }*/
+  .Sec1home {
+     height: 38em;
+  }
+}
+@media (max-width: 545px) {
+  #long {
+    display: none;
+  }
+  #hometitle {
+     padding-top: 119px;
+  }
+  .Sec1home {
+     height: 40.3em;
+  }
+}
+
+
+#hometitletop {
+   font-size: 30px;
+   font-family: 'Pacifico';
+   margin-bottom: -15px;
+}
+#hometitlebottom {
+   font-size: 30px;
+   font-family: 'Pacifico';
+   margin-top: -5px;
+}
+#circleimage {
+   border-color: white;
+   border-style: double;
+   background-image: url("https://media.licdn.com/media/AAEAAQAAAAAAAAgBAAAAJGVhYmQwZDI4LTFlMDMtNDk1MS05YzE5LWViMTljNzM0MTFjZQ.jpg");
+   background-size: 102%;
+   background-repeat: no-repeat;
+   margin: auto;
+   margin-top: -100px;
+
+   /*circle css*/
+   background-position: center;
+   border-radius: 50%;
+	width: 200px;
+	height: 200px;
+}
+/*@media (min-width: 600px) {
+   #circleimage {
+      background-position: center;
+      border-radius: 50%;
+      width: 350px;
+      height: 350px;
+      }
+   }*/
+   #certimage {
+      background-image: url("/images/Drawing (1).png");
+      background-size: 102%;
+      background-repeat: no-repeat;
+      margin: auto;
+      margin-top: -200px;
+      margin-left: 85%;
+      width: 150px;
+   	height: 170px;
+   }
+.Sec2home {
+   margin:40px;
+   margin-top: 60px;
+   text-align: center;
+   /*height: 100em;*/
+   /*color: white;
+   background-image: url("https://images.unsplash.com/photo-1456428199391-a3b1cb5e93ab?crop=entropy&dpr=2&fit=crop&fm=jpg&h=825&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1450");
+   background-size: 100em;
+   background-repeat: no-repeat;
+   background-position: center;
+   width: 100%;
+   height: 40em;*/
+}
+hr.blogpreview {
+   width: 70%;
+}
+#blogpreviewtxt {
+   font-family: 'Pacifico';
+}
+.post {
+   margin: 35px;
+}
+.blogtitle {
+   font-family: 'Exo 2', sans-serif;
+   margin-bottom: 10px;
+
+}
+.blogsubtitle {
+   font-family: 'Exo 2', sans-serif;
+   font-size: 25px;
+}
+.blogpostdate {
+   font-family: 'Exo 2', sans-serif;
+   font-style: italic;
+   margin-top: 5px;
+}
+
+/*==========================ABOUT & CONTACT TEMPLATE CSS=============================*/
+#abouttitle {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   padding-top: 130px;
+   margin-top: -32px;
+   /*text-align: center;*/
+   font-family: 'Candal', sans-serif;
+   color: white;
+   font-size: 6em;
+   text-shadow: 0 1px 0 black;
+}
+.aboutSec1 {
+   color: white;
+   background-image: url("https://images.unsplash.com/photo-1433689056001-018e493576bc?crop=entropy&fit=crop&fm=jpg&h=950&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1925");
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   height: 24em;
+}
+#ami {
+   margin-left: 14px;
+   margin-right: 14px;
+   min-width: 290px;
+}
+@media (max-width: 578px) {
+   .aboutSec1 {
+      height: 32em;
+   }
+}
+.contactSec1 {
+   color: white;
+   background-image: url("https://images.unsplash.com/photo-1428341751458-3c844056bc0f?crop=entropy&fit=crop&fm=jpg&h=725&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1775");
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: right;
+   height: 24em;
+}
+#circleimage2 {
+   border-color: white;
+   border-style: double;
+   background-image: url("https://scontent-sjc2-1.xx.fbcdn.net/hphotos-xlp1/t31.0-8/12045571_10153500322237626_7789469780754362445_o.jpg");
+   background-size: 212%;
+   background-repeat: no-repeat;
+   margin: auto;
+   margin-top: -100px;
+
+   /*circle css*/
+   background-position: center;
+   border-radius: 50%;
+	width: 200px;
+	height: 200px;
+}
+
+.AboutSec2 {
+   /*height: 100em;*/
+   /*color: white;
+   background-image: url("https://images.unsplash.com/photo-1456428199391-a3b1cb5e93ab?crop=entropy&dpr=2&fit=crop&fm=jpg&h=825&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1450");
+   background-size: 100em;
+   background-repeat: no-repeat;
+   background-position: center;
+   width: 100%;
+   height: 40em;*/
+}
+.AboutSec2 >p {
+   text-align: center;
+   padding: 10%;
+   padding-top: 25px;
+}
+.quotecontainer {
+   text-align: center;
+   margin: 45px;
+   line-height: 35px;
+   font-family: 'Cutive Mono';
+   font-size: 20px;
+   font-weight: bold;
+}
+#quote1 {
+   font-size: 2em;
+   font: alder;
+}
+#quote2 {
+   margin-top: 5px;
+   font-size: 1.3em;
+}
+.tilecontainer {
+   display: flex;;
+   flex-wrap: wrap;
+   min-width: 400px;
+
+}
+.tile {
+width: 300px;
+height: 225px;
+margin: 6px;
+}
+
+/*================================== CONTACT TEMPLATE =========================================*/
+.ContactSec2 {
+   text-align: center;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+   margin: 50px;
+}
+.contactleft {
+   width:50%;
+   font-size: 20px;
+   font-family: 'Exo 2', sans-serif;
+   margin-right: 3%;
+   margin-top: -50px;
+
+}
+.contactleft > h3 {
+   font-size: 45px;
+   text-align: center;
+}
+.contactright {
+   text-align: left;
+}
+.contactlogos {
+   text-align: center;
+   margin: 45px;
+}
+/*===================================== BLOG TEMPLATE CSS =========================================*/
+.blogcontainer {
+   text-align: center;
+}

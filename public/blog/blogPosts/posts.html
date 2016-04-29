@@ -1,0 +1,11 @@
+<div class="blogcontainer">
+    <!-- blogpost one -->
+    <div class="post" ng-repeat="post in posts">
+        <h1 class="blogtitle">{{post.title}}</h1>
+        <div class="blogsubtitle">
+            {{post.subtitle}}
+        </div>
+        <div class="blogpostdate">Posted April 1, 2016</div>
+        {{post.fullpost}}
+    </div>
+</div>
