@@ -10,7 +10,7 @@ var Product = require("./schema.js");
 
       var app = express();
 
-      app.use(session({secret: config.sessionSecret}))
+      // app.use(session({secret: config.sessionSecret}))
       app.use(bodyParser.json());
       app.use(express.static(__dirname + '/../public'));  //end all of our static front-end files from our server.
 
@@ -37,7 +37,14 @@ var Product = require("./schema.js");
 
 //===============================================================
 
-// app.post('/api/products', controller.addProduct);
+/*// app.post('/api/products', function(req, res, next){
+   if (req.user.isAdmin()){
+      next();
+   }else{
+      res.sendStatus(403);
+   }
+}
+} controller.addProduct); */
 // app.get('/api/products', controller.getProduct);
 // app.get('/api/products/:id', controller.getOneProduct);
 // app.put('/api/products/:id', controller.changeProduct);
