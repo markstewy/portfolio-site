@@ -25,7 +25,7 @@ angular.module('app').directive('postDir', function() {
          // $scope.getPosts();
 // ========================================================================
 
-
+$scope.addPost = postService.addPost;
 $scope.posts = postService.posts;
 
 

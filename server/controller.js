@@ -1,5 +1,6 @@
 var mongoose = require('mongoose');
 var Product = require('./schema.js');
+var nodemailer = require('nodemailer');
 
 module.exports = {
 
@@ -32,4 +33,5 @@ module.exports = {
             return err ? res.status(500).send(err) : res.send(response);
         });
     }
+
 };

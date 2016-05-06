@@ -1,5 +1,12 @@
 angular.module('app').service('postService', function($http, $q) {
 
+this.addPost = function(post){
+   return $http.post('/api/posts', post).then(function(response){
+      return response.data;
+   },function (err){
+      console.log(err);
+   })
+}
 
 this.posts = [
    {

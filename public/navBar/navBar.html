@@ -1,10 +1,26 @@
 <div class="header1">
-   <div class="navbar">
-      <a class="logoname" ui-sref="home" >MarkStewy.com</a>
-      <a id='navbutton' ui-sref="home">HOME</a>
-      <a id='navbutton' ui-sref="about">ABOUT</a>
-      <a id='navbutton' ui-sref="blog">BLOG</a>
-      <a id='navbutton' ui-sref="portfolio">PORTFOLIO</a>
-      <a id='navbutton' ui-sref="contact">CONTACT</a>
-   </div>
+    <div class="navbar">
+        <a class="logoname" ui-sref="home">MarkStewy.com</a>
+        <a id='navbutton' ui-sref="home">HOME</a>
+        <a id='navbutton' ui-sref="about">ABOUT</a>
+        <a id='navbutton' ui-sref="blog">BLOG</a>
+        <a id='navbutton' ui-sref="portfolio">PORTFOLIO</a>
+        <a id='navbutton' ui-sref="contact">CONTACT</a>
+
+    </div>
+    <!-- mobile hamburger menu -->
+    <header>
+      <button class="hamburger">&#9776;</button>
+      <button class="cross">&#735;</button>
+    </header>
+    <div class="menu">
+      <ul>
+        <a ui-sref="home"><li>HOME</li></a>
+        <a ui-sref="about"><li>ABOUT</li></a>
+        <a ui-sref="blog"><li>BLOG</li></a>
+        <a ui-sref="portfolio"><li>PORTFOLIO</li></a>
+        <a ui-sref="contact"><li>CONTACT</li></a>
+      </ul>
+    </div>
+
 </div>

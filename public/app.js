@@ -27,6 +27,11 @@ angular.module('app', ['ui.router'])
             templateUrl: './contact/contact.html',
             // controller: ''
          })
+         .state('contactThankYou', {
+            url:'/contactThankYou',
+            templateUrl: './contact/contactThankYou.html',
+            // controller: ''
+         })
          .state('admin', {
             url:'/admin',
             templateUrl: './admin/admin.html',

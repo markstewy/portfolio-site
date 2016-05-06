@@ -1,129 +1,191 @@
 html, body {
-   width: 100%;
-   margin: 0px;
-   padding: 0px;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
 }
 .header1 {
-   position: absolute;
-   width: 100%;
-   text-align: right;
-   z-index: 10;
+    position: absolute;
+    width: 100%;
+    text-align: right;
+    z-index: 10;
 }
 .navbar {
-   padding-top: 40px;
-   /*height: 50px;*/
+    padding-top: 40px;
+    /*height: 50px;*/
 }
 #navbutton {
-   margin-right: 32px;
-   margin-top: 30px;
-   text-decoration: none;
-   font-family: 'Candal', sans-serif;
-   color: white;
-   text-shadow: 0 1px 0 black;
+    margin-right: 32px;
+    margin-top: 30px;
+    text-decoration: none;
+    font-family: 'Candal', sans-serif;
+    color: white;
+    text-shadow: 0 1px 0 black;
+}
+.adminbutton {
+    text-align: right;
+    text-decoration: none;
+    font-family: 'Candal', sans-serif;
+    color: white;
+    width: 50px;
+    cursor: pointer;
 }
 .logoname {
-   margin-top: -15px;
-   margin-left: 40px;
-   float: left;
-   font-family: 'Pacifico';
-   font-size: 1.7em;
-   color: white;
-   text-decoration: none;
-   text-shadow: 0 1px 0 black;
+    margin-top: -15px;
+    margin-left: 40px;
+    float: left;
+    font-family: 'Pacifico';
+    font-size: 1.7em;
+    color: white;
+    text-decoration: none;
+    text-shadow: 0 1px 0 black;
 }
+
+/*==========hamburger menu================*/
+
+.hamburger{
+  background:none;
+  position:absolute;
+  top:0;
+  right:0;
+  line-height:45px;
+  padding:0px 15px 0px 15px;
+  color:#fff;
+  border:0;
+  font-size:1.4em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.cross{
+  background:none;
+  position:absolute;
+  top:0px;
+  right:0;
+  padding:0px 15px 0px 15px;
+  color:#fff;
+  border:0;
+  font-size:3em;
+  line-height:65px;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.menu {
+    z-index: 1000000;
+    font-weight: bold;
+    font-size: 0.8em;
+    width: 100%;
+    background: #131313;
+    position: absolute;
+    text-align: center;
+}
+.menu ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    list-style-image: none;
+}
+.menu li {
+    display: block;
+    padding: 15px 0 15px 0;
+    border-bottom: #1d1f20 1px solid;
+    font-family: 'Exo 2', sans-serif;
+    letter-spacing: 3px;
+    font-size: 17px;
+}
+.menu li:hover {
+    display: block;
+    background: #181818;
+    padding: 15px 0 15px 0;
+    border-bottom: #1d1f20 1px solid;
+}
+.menu ul li a {
+    text-decoration: none;
+    margin: 0px;
+    color: #fff;
+}
+.menu ul li a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+.menu a {
+    text-decoration: none;
+    color: white;
+}
+.menu a:hover {
+    text-decoration: none;
+    color: white;
+}
+.glyphicon-home {
+    color: white;
+    font-size: 1.5em;
+    margin-top: 5px;
+    margin: 0 auto;
+}
+
 /*==========================HOME TEMPLATE CSS=============================*/
+
 #hometitle {
-   padding-top: 150px;
-   margin-top: -32px;
-   text-align: center;
-   font-family: 'Candal', sans-serif;
-   color: white;
-   font-size: 6em;
-   text-shadow: 0 1px 0 black;
-   line-height: 85px;
-   /*min-width: 880px;*/
+    padding-top: 150px;
+    margin-top: -32px;
+    text-align: center;
+    font-family: 'Candal', sans-serif;
+    color: white;
+    font-size: 6em;
+    text-shadow: 0 1px 0 black;
+    line-height: 85px;
+    /*min-width: 880px;*/
 }
 .Sec1home {
-   /*color: white;*/
-   background-image: url("https://images.unsplash.com/photo-1428341751458-3c844056bc0f?crop=entropy&fit=crop&fm=jpg&h=725&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1775");
-   background-size: cover;
-   background-repeat: no-repeat;
-   background-position: right;
-   height: 32em;
+    /*color: white;*/
+    background-image: url("https://images.unsplash.com/photo-1428341751458-3c844056bc0f?crop=entropy&fit=crop&fm=jpg&h=725&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1775");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 32em;
 }
-@media (max-width: 880px) {
-  #long {
-    display: none;
-  }
-  /*#hometitle {
-     padding-top: 119px;
-  }*/
-  .Sec1home {
-     height: 38em;
-  }
-}
-@media (max-width: 545px) {
-  #long {
-    display: none;
-  }
-  #hometitle {
-     padding-top: 119px;
-  }
-  .Sec1home {
-     height: 40.3em;
-  }
-}
-
-
 #hometitletop {
-   font-size: 30px;
-   font-family: 'Pacifico';
-   margin-bottom: -15px;
+    font-size: 30px;
+    font-family: 'Pacifico';
+    margin-bottom: -15px;
 }
 #hometitlebottom {
-   font-size: 30px;
-   font-family: 'Pacifico';
-   margin-top: -5px;
+    font-size: 30px;
+    font-family: 'Pacifico';
+    margin-top: -5px;
 }
 #circleimage {
-   border-color: white;
-   border-style: double;
-   background-image: url("https://media.licdn.com/media/AAEAAQAAAAAAAAgBAAAAJGVhYmQwZDI4LTFlMDMtNDk1MS05YzE5LWViMTljNzM0MTFjZQ.jpg");
-   background-size: 102%;
-   background-repeat: no-repeat;
-   margin: auto;
-   margin-top: -100px;
-
-   /*circle css*/
-   background-position: center;
-   border-radius: 50%;
-	width: 200px;
-	height: 200px;
+    border-color: white;
+    border-style: double;
+    background-image: url("https://media.licdn.com/media/AAEAAQAAAAAAAAgBAAAAJGVhYmQwZDI4LTFlMDMtNDk1MS05YzE5LWViMTljNzM0MTFjZQ.jpg");
+    background-size: 102%;
+    background-repeat: no-repeat;
+    margin: auto;
+    margin-top: -100px;
+    /*circle css*/
+    background-position: center;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
 }
-/*@media (min-width: 600px) {
-   #circleimage {
-      background-position: center;
-      border-radius: 50%;
-      width: 350px;
-      height: 350px;
-      }
-   }*/
-   #certimage {
-      background-image: url("/images/Drawing (1).png");
-      background-size: 102%;
-      background-repeat: no-repeat;
-      margin: auto;
-      margin-top: -200px;
-      margin-left: 85%;
-      width: 150px;
-   	height: 170px;
-   }
+#certimage {
+    background-image: url("/images/Drawing (1).png");
+    background-size: 102%;
+    background-repeat: no-repeat;
+    margin: auto;
+    margin-top: -200px;
+    margin-left: 85%;
+    width: 150px;
+    height: 170px;
+}
 .Sec2home {
-   margin:40px;
-   margin-top: 60px;
-   text-align: center;
-   /*height: 100em;*/
-   /*color: white;
+    margin: 40px;
+    margin-top: 60px;
+    text-align: center;
+    /*height: 100em;*/
+    /*color: white;
    background-image: url("https://images.unsplash.com/photo-1456428199391-a3b1cb5e93ab?crop=entropy&dpr=2&fit=crop&fm=jpg&h=825&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1450");
    background-size: 100em;
    background-repeat: no-repeat;
@@ -132,87 +194,72 @@ html, body {
    height: 40em;*/
 }
 hr.blogpreview {
-   width: 70%;
+    width: 70%;
 }
 #blogpreviewtxt {
-   font-family: 'Pacifico';
+    font-family: 'Pacifico';
 }
 .post {
-   margin: 35px;
+    margin: 35px;
 }
 .blogtitle {
-   font-family: 'Exo 2', sans-serif;
-   margin-bottom: 10px;
-
+    font-family: 'Exo 2', sans-serif;
+    margin-bottom: 10px;
 }
 .blogsubtitle {
-   font-family: 'Exo 2', sans-serif;
-   font-size: 25px;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 25px;
 }
 .blogpostdate {
-   font-family: 'Exo 2', sans-serif;
-   font-style: italic;
-   margin-top: 5px;
+    font-family: 'Exo 2', sans-serif;
+    font-style: italic;
+    margin-top: 5px;
 }
 
 /*==========================ABOUT & CONTACT TEMPLATE CSS=============================*/
+
 #abouttitle {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
-   padding-top: 130px;
-   margin-top: -32px;
-   /*text-align: center;*/
-   font-family: 'Candal', sans-serif;
-   color: white;
-   font-size: 6em;
-   text-shadow: 0 1px 0 black;
+    text-align: center;
+    padding-top: 130px;
+    margin-top: -32px;
+    font-family: 'Candal', sans-serif;
+    color: white;
+    font-size: 6em;
+    text-shadow: 0 1px 0 black;
 }
 .aboutSec1 {
-   color: white;
-   background-image: url("https://images.unsplash.com/photo-1433689056001-018e493576bc?crop=entropy&fit=crop&fm=jpg&h=950&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1925");
-   background-size: cover;
-   background-repeat: no-repeat;
-   background-position: center;
-   height: 24em;
-}
-#ami {
-   margin-left: 14px;
-   margin-right: 14px;
-   min-width: 290px;
-}
-@media (max-width: 578px) {
-   .aboutSec1 {
-      height: 32em;
-   }
+    color: white;
+    background-image: url("https://images.unsplash.com/photo-1433689056001-018e493576bc?crop=entropy&fit=crop&fm=jpg&h=950&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1925");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 24em;
 }
 .contactSec1 {
-   color: white;
-   background-image: url("https://images.unsplash.com/photo-1428341751458-3c844056bc0f?crop=entropy&fit=crop&fm=jpg&h=725&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1775");
-   background-size: cover;
-   background-repeat: no-repeat;
-   background-position: right;
-   height: 24em;
+    color: white;
+    background-image: url("https://images.unsplash.com/photo-1428341751458-3c844056bc0f?crop=entropy&fit=crop&fm=jpg&h=725&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1775");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 24em;
 }
 #circleimage2 {
-   border-color: white;
-   border-style: double;
-   background-image: url("https://scontent-sjc2-1.xx.fbcdn.net/hphotos-xlp1/t31.0-8/12045571_10153500322237626_7789469780754362445_o.jpg");
-   background-size: 212%;
-   background-repeat: no-repeat;
-   margin: auto;
-   margin-top: -100px;
-
-   /*circle css*/
-   background-position: center;
-   border-radius: 50%;
-	width: 200px;
-	height: 200px;
+    border-color: white;
+    border-style: double;
+    background-image: url("https://scontent-sjc2-1.xx.fbcdn.net/hphotos-xlp1/t31.0-8/12045571_10153500322237626_7789469780754362445_o.jpg");
+    background-size: 212%;
+    background-repeat: no-repeat;
+    margin: auto;
+    margin-top: -100px;
+    /*circle css*/
+    background-position: center;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
 }
-
 .AboutSec2 {
-   /*height: 100em;*/
-   /*color: white;
+    /*height: 100em;*/
+    /*color: white;
    background-image: url("https://images.unsplash.com/photo-1456428199391-a3b1cb5e93ab?crop=entropy&dpr=2&fit=crop&fm=jpg&h=825&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1450");
    background-size: 100em;
    background-repeat: no-repeat;
@@ -221,67 +268,183 @@ hr.blogpreview {
    height: 40em;*/
 }
 .AboutSec2 >p {
-   text-align: center;
-   padding: 10%;
-   padding-top: 25px;
+    text-align: center;
+    padding: 10%;
+    padding-top: 25px;
 }
 .quotecontainer {
-   text-align: center;
-   margin: 45px;
-   line-height: 35px;
-   font-family: 'Cutive Mono';
-   font-size: 20px;
-   font-weight: bold;
+    text-align: center;
+    margin: 45px;
+    line-height: 35px;
+    font-family: 'Cutive Mono';
+    font-size: 20px;
+    font-weight: bold;
 }
 #quote1 {
-   font-size: 2em;
-   font: alder;
+    font-size: 2em;
+    font: alder;
 }
 #quote2 {
-   margin-top: 5px;
-   font-size: 1.3em;
+    margin-top: 5px;
+    font-size: 1.3em;
 }
 .tilecontainer {
-   display: flex;;
-   flex-wrap: wrap;
-   min-width: 400px;
-
+    display: flex;
+    ;
+    flex-wrap: wrap;
+    min-width: 400px;
 }
 .tile {
-width: 300px;
-height: 225px;
-margin: 6px;
+    width: 300px;
+    height: 225px;
+    margin: 6px;
 }
 
 /*================================== CONTACT TEMPLATE =========================================*/
+
 .ContactSec2 {
-   text-align: center;
-   display: flex;
-   flex-direction: row;
-   flex-wrap: wrap;
-   justify-content: center;
-   margin: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px;
 }
 .contactleft {
-   width:50%;
-   font-size: 20px;
-   font-family: 'Exo 2', sans-serif;
-   margin-right: 3%;
-   margin-top: -50px;
-
+    width: 50%;
+    font-size: 20px;
+    font-family: 'Exo 2', sans-serif;
+    margin-right: 3%;
+    margin-top: -50px;
 }
 .contactleft > h3 {
-   font-size: 45px;
-   text-align: center;
+    font-size: 45px;
+    text-align: center;
 }
 .contactright {
-   text-align: left;
+    text-align: left;
 }
 .contactlogos {
-   text-align: center;
-   margin: 45px;
+    text-align: center;
+    margin: 45px;
 }
+
 /*===================================== BLOG TEMPLATE CSS =========================================*/
+
 .blogcontainer {
-   text-align: center;
+    text-align: center;
+}
+
+
+/*===================================== PORTFOLIO TEMPLATE CSS =========================================*/
+#porttitle {
+    text-align: center;
+    padding-top: 130px;
+    margin-top: -32px;
+    font-family: 'Candal', sans-serif;
+    color: white;
+    font-size: 6em;
+    text-shadow: 0 1px 0 black;
+}
+/*===================================== MEDIA QUERIES =========================================*/
+
+@media (max-width: 880px) {
+    #long {
+        display: none;
+    }
+    #navbutton {
+        display: none;
+    }
+    .mobile-nav {
+        display: block;
+    }
+    /*#hometitle {
+     padding-top: 119px;
+  }*/
+    .Sec1home {
+        height: 38em;
+    }
+}
+@media (max-width: 545px) {
+   /*HOME*/
+    #long {
+        display: none;
+    }
+    #hometitle {
+        padding-top: 40px;
+        line-height: 78px;
+    }
+    #hometitlemiddle {
+        line-height: 61px;
+        font-size: 66px;
+    }
+    #hometitletop {
+      margin-top: 13px;
+   }
+    .navbar {
+        padding-top: 22px;
+    }
+    .logoname {
+        display: none;
+    }
+    .Sec1home {
+        height: 29.3em;
+    }
+    .Sec2home {
+        margin: 5px;
+    }
+    /*ABOUT*/
+    .aboutSec1 {
+      height: 22.3em;
+   }
+   .contactlogos {
+      margin: 5px;
+   }
+   .quotecontainer {
+      margin: 25px;
+   }
+   #abouttitle {
+      font-size: 70px;
+      line-height: 75px;
+      padding-top: 84px;
+   }
+   /*CONTACT*/
+   .contactSec1 {
+      height: 203px;
+   }
+   .contactSec2 {
+      margin: 20px;
+   }
+   .contactleft >p {
+      display: none;
+   }
+   .contactleft >h3 {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      font-size: 30px;
+      text-align: center;
+   }
+   .contactright >form>div>textarea {
+      /*padding-left: 50px*/
+      width: 288px;
+   }
+   #inputfield {
+      width = 288px;
+      border: gray solid 1px;
+   }
+   /*PORTFOLIO*/
+   #porttitle {
+      font-size: 50px;
+      line-height: 75px;
+      padding-top: 84px;
+   }
+   .portmsg {
+      font-size: 20px;
+      font-family: 'Exo 2', sans-serif;
+      margin: 46px;
+      padding-left: 40px;
+   }
+    /* end media */
 }
