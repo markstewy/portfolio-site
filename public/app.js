@@ -35,7 +35,7 @@ angular.module('app', ['ui.router'])
          .state('admin', {
             url:'/admin',
             templateUrl: './admin/admin.html',
-            // controller: ''
+            controller: 'adminCtrl'
          })
          $urlRouterProvider.otherwise('/home');
          });

@@ -1,6 +1,19 @@
 <div class="contactSec1">
     <div id="abouttitle">
-        BLOG ADMIN
+        ADMIN
     </div>
 </div>
-<post-dir></post-dir>
+<div style="margin-left: 40px;">
+
+Title <br>
+<textarea name="name" ng-model="post.title" rows="2" cols="40" value="post.title"></textarea><br>
+Subtitle <br>
+<textarea name="name" ng-model="post.subtitle" rows="2" cols="40" value="post.subtitle"></textarea><br>
+Post Date <br>
+<textarea name="name" ng-model="post.date" rows="2" cols="40" value="post.date"></textarea><br>
+
+<textarea name="name" ng-model="post.fullpost" rows="8" cols="40" value="post.fullpost"></textarea><br>
+<button type="button" ng-click="addpost(post)" name="button">SUBMIT</button>
+</div>
+
+<edit-dir></edit-dir>
