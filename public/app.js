@@ -1,4 +1,4 @@
-angular.module('app', ['ui.router'])
+angular.module('app', ['ui.router', 'hc.marked'])
    .config(function($stateProvider, $urlRouterProvider) {
 
       $stateProvider
@@ -20,7 +20,7 @@ angular.module('app', ['ui.router'])
          .state('portfolio', {
             url:'/portfolio',
             templateUrl: './portfolio/portfolio.html',
-            // controller: ''
+            controller: 'postCtrl'
          })
          .state('contact', {
             url:'/contact',

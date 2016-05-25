@@ -8,7 +8,6 @@ var facebookLogin = require('passport-facebook');
 //.gitignore "node_modules" & "config.js"
 var config = require('./config.js'); //session secret
 var controller = require('./controller.js');
-var Product = require("./schema.js");
 
 var app = express();
 
@@ -25,7 +24,7 @@ passport.use(new facebookLogin({
     callbackURL: "/auth/facebook/callback",
     profileField: ['id', 'displayName', 'photos', 'email']
 }, function(token, refreshToken, profile, done) {
-    console.log(profile);
+   //  console.log(profile);
     return done(null, profile);
 }));
 
@@ -49,7 +48,10 @@ app.get('/me', function(req, res) {
     //====================== POSTS ===================================================
 
 app.post('/api/addposts', controller.checkAdmin, controller.addPost)
+app.post('/api/addprojects', controller.checkAdmin, controller.addProject)
 app.get('/api/posts', controller.getPostData)
+app.get('/api/projects', controller.getProjectData)
+app.delete('/api/delete/:id', controller.checkAdmin, controller.deletePost)
 
 
 // CONNECTIONS //

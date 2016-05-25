@@ -5,15 +5,20 @@
 </div>
 <div style="margin-left: 40px;">
 
-Title <br>
+Title (blog posts only) <br>
 <textarea name="name" ng-model="post.title" rows="2" cols="40" value="post.title"></textarea><br>
-Subtitle <br>
+Subtitle (blog posts only) <br>
 <textarea name="name" ng-model="post.subtitle" rows="2" cols="40" value="post.subtitle"></textarea><br>
-Post Date <br>
+Post Date (blog posts only) <br>
 <textarea name="name" ng-model="post.date" rows="2" cols="40" value="post.date"></textarea><br>
 
-<textarea name="name" ng-model="post.fullpost" rows="8" cols="40" value="post.fullpost"></textarea><br>
-<button type="button" ng-click="addpost(post)" name="button">SUBMIT</button>
+<div><textarea id="MyID" name="name" ng-model="post.fullpost" rows="8" cols="40" value="post.fullpost"></textarea></div>
+<div><button type="button" ng-click="addpost(post)" name="button">SUBMIT BLOG POST</button></div><br>
+<div><button type="button" ng-click="addproject(post)" name="button">SUBMIT PORTFOLIO ITEM</button></div>
+
 </div>
+<br><br>
+<!-- <input type="text" ng-model="trashID" style='width: 200px;'>
+<button type="button" name="button" ng-click="deletePost(trashID)">DELETE POST</button><br><br> -->
 
 <edit-dir></edit-dir>
