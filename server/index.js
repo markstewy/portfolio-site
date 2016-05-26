@@ -51,7 +51,8 @@ app.post('/api/addposts', controller.checkAdmin, controller.addPost)
 app.post('/api/addprojects', controller.checkAdmin, controller.addProject)
 app.get('/api/posts', controller.getPostData)
 app.get('/api/projects', controller.getProjectData)
-app.delete('/api/delete/:id', controller.checkAdmin, controller.deletePost)
+app.delete('/api/deletepost/:id', controller.checkAdmin, controller.deletePost)
+app.delete('/api/deleteproject/:id', controller.checkAdmin, controller.deleteProject)
 
 
 // CONNECTIONS //

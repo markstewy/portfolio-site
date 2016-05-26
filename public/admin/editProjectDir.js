@@ -1,10 +1,10 @@
-angular.module( "app" ).directive( "editDir", function () {
+angular.module( "app" ).directive( "editProjectDir", function () {
 
      return {
        // scope: {
        //    templHtmlName: '=passToDirName'
        // },
-       template: "<div ng-repeat='post in posts'><div>{{post.title}}<button type='button' name='button' ng-click='deletePost(post._id)'>DELETE POST</button><br><br></div><br></div>",
+       template: "<div ng-repeat='project in projects'><div>{{project.title}}<button type='button' name='button' ng-click='deleteProject(project._id)'>DELETE PORTFOLIO PROJECT</button><br><br></div><br></div>",
        restrict: 'E',   //link: function(scope, element, attr) {}, scope: {}   **also optoins,
       //  link: function(scope, element, attribute) {},
        controller: 'postCtrl'

@@ -4,13 +4,13 @@
    </div>
 </div>
 
-<div class="post" ng-repeat="project in projects">
-    <h1 class="blogtitle">{{project.title}}</h1>
+<div class="post" style="text-align: center;" ng-repeat="project in projects">
+    <!-- <h1 class="blogtitle">{{project.title}}</h1> -->
     <!-- <div class="blogsubtitle">
         {{post.subtitle}}
     </div> -->
     <!-- <div class="blogpostdate">Posted {{post.date}}</div> -->
-   <div style="text-align: justify-all;" marked="project.fullpost"></div>
+   <div style="text-align: center;" marked="project.fullpost"></div>
    <!-- "marked" attribute linked to angular-marked https://github.com/Hypercubed/angular-marked/blob/master/README.md -->
 </div>
 </div>

@@ -10,13 +10,7 @@ $scope.addproject = function(post) {
    postService.addProject(post);
 }
 
-$scope.deletePost = function(trashID) {
-   postService.deletePost(trashID);
-}
 
-// $scope.deleteProject = function(trashID) {
-//    postService.deleteProject(trashID);
-// }
 
 //==============================================================================
 //simplemde plugin

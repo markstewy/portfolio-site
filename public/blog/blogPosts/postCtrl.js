@@ -12,7 +12,7 @@ angular.module("app").controller("postCtrl", function($scope, postService) {
     $scope.getProjects = function() {
       postService.getProjectData()
            .then(function(res) {
-             console.log(res)
+            //  console.log(res)
                $scope.projects = res.reverse();
 
            })
@@ -21,8 +21,15 @@ angular.module("app").controller("postCtrl", function($scope, postService) {
 
 
     $scope.deletePost = function(trashID) {
+      // console.log(trashID)
        postService.deletePost(trashID);
     }
+
+    $scope.deleteProject = function(trashID) {
+      // console.log(trashID)
+       postService.deleteProject(trashID);
+    }
+
 
 
 }); //end of ctrl

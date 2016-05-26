@@ -32,21 +32,30 @@ angular.module('app').service('postService', function($http, $q) {
             method: 'GET',
             url: '/api/projects'
         }).then(function(res) {
-              console.log(res);
+            //   console.log(res);
             return res.data
         })
     };
 
     this.deletePost = function(trashID) { //adminCtrl
-        console.log(trashID)
+      //   console.log(trashID)
         return $http({
             method: 'DELETE',
-            url: '/api/delete/' + trashID
+            url: '/api/deletepost/' + trashID
         }).then(function(res) {
             return res.data;
         })
     };
 
+    this.deleteProject = function(trashID) { //adminCtrl
+        console.log(trashID)
+        return $http({
+            method: 'DELETE',
+            url: '/api/deleteproject/' + trashID
+        }).then(function(res) {
+            return res.data;
+        })
+    };
 
 
 
