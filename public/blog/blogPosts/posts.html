@@ -3,7 +3,6 @@
       <a style="color: white;" href="/auth/facebook">
          ADMIN
       </a>
-      <!-- <button ng-click = "addPost({message:'i am static post'})">POST!!!!!!!!!!</button> -->
    </div>
     <!-- blogpost one -->
     <div class="post" ng-repeat="post in posts">
@@ -12,6 +11,6 @@
             {{post.subtitle}}
         </div>
         <div class="blogpostdate">Posted {{post.date}}</div>
-        {{post.fullpost}}
+       <div style="text-align: justify-all;" marked="post.fullpost"></div> <!-- "marked" attribute linked to angular-marked https://github.com/Hypercubed/angular-marked/blob/master/README.md -->
     </div>
 </div>
